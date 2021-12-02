@@ -5,10 +5,10 @@
 //------------------------------------------------------------------------------------------------------------------------------------------------------
 class ExportToWord {
 
-	private static $mimeDocSeparator = 'doc_file_separator';	// any text for mime separation
-	private static $srcEncoding = 'UTF-8';						// source project encoding
-	private static $imgRef = '/img/';							// path to the images directory in 'ref' format
-	private static $imgDir = 'c:/myproj/img/';					// path to the images directory in absolute format
+	public static $mimeDocSeparator = 'doc_file_separator';	// any text for mime separation
+	public static $srcEncoding = 'UTF-8';						// source project encoding
+	public static $imgRef = '';							// path to the images directory in 'ref' format
+	public static $imgDir = '';					// path to the images directory in absolute format
 
 	public static function htmlToDoc($srcHtml, $srcCss, $filePath = NULL, $filePathEncoding = 'UTF-8') {
 		// Converting from html to *.doc into the file $filePath
